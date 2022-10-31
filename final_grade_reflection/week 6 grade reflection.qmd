@@ -1,0 +1,18 @@
+---
+title: " Week6 Grade Reflection"
+author: "Ashley Adams"
+format: html
+editor: visual
+---
+
+##  Week 6 Reflection
+
+As of now, I can't say that I've properly improved in this course since week 3. I've hit a lull and am trying to catch up and continue learning in this course, but things are moving quickly and I'm having difficulties keeping up and am just not where I want to be in terms of mastering the course material. As of now, I think that my learning accomplishments can only be best demonstrated by the learning targets in Labs 2 and 3 where we learned how to use GGplot and clean our data.
+
+I haven't successfully demonstrated my commitment to learning. I am 2 weeks behind on assignments, though I am almost done with them and will have them completed by the time you are reading this! I've really struggled with balancing my academic life and personal life. Other grad school agenda items have taken precedence and I've had to learn how to deal with anxieties surrounding grad school life while continuing my classes, managing research, helping undergraduates and navigating my personal life and I have not been putting my learning for this coursework at the top of my priority list, though I am working on turning this around before the quarter comes to an end. My plan of action is to submit Labs 4 and 5 by Tuesday night of this week, attend our scheduled meeting, and be more active on the discord when I have questions because office hours are difficult for me to attend at their scheduled time.
+
+I've been really quiet and have not grown as a team leader. I try to be an active participant in class, but outside of class I have been closed off and this is not my normal team work style/behavior. I would like this to change for me this week so that I can be helpful to my group members, especially as we prepare to continue working together for the next few weeks. I hope that I can feel confident to share my ideas and become a better collaborator as we wrap up this class.
+
+I've contributed to creating a respectful classroom learning community by always being kind a respectful in class to my peers and to you. I feel strongly that learning must happen in safe and welcoming environments so I always work to demonstrate this by being kind and respectful to those around me, especially since we never really know what anybody is dealing with outside of class and these things can go a long way.
+
+I've accomplished some of the goals I set for myself, but not all of them. I have become more familiar with R and feel more empowered to work in this program, but am disappointed in myself that I've let myself get behind and feel clueless in class. My main goal for this class was to simply improve at using R, so I've technically accomplished this goal, but my new goal is to continue turning in my assignments and mostly master the learning goals set for the next few weeks while staying on top of my assignments.
