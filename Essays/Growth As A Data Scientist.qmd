@@ -1,0 +1,11 @@
+---
+title: "Growth As A Data Scientist"
+format: html
+editor: visual
+---
+
+## Growth As A Data Scientist
+
+Prior to this class, I've had very little programming experience. I used R briefly in undergraduate bio courses, but would not consider myself to be an expert by any means. As of now, I feel slightly more confident, though still very inadequate in my capabilities of managing and visualizing data in R Studio. One of my main goals in this course was and is to just become more familiar with the program so that I can use it to manage and understand my own dataset I'm building for my master's thesis project.
+
+As of now, I feel decent about being able to clean my data which is something I have not been previously exposed to prior to this course. This is a skill that can be demonstrated in my Lab 3 when we learned how to go through and mutate and filter data to search for and select individual pieces that we wanted to isolate. Prior to completing Lab 3, I wouldn't have known how to or even been able to filter my data, or even properly use this "pipe" function. So I believe that because I've been exposed to these new functions in R, I've certainly grown my base skills and will continue demonstrating my proficiency in these skills in this class and in my own research work.
