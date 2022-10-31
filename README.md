@@ -1,5 +1,5 @@
 Table of Contents: 
-Essays Con't
-Essays
-final grade reflection
+Essays Con't,
+Essays,
+final grade reflection,
 supporting artifacts
