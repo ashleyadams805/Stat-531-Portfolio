@@ -1,0 +1,182 @@
+---
+title: "Lab 3 Hip Hop_AshleyAdams"
+format: html
+editor: visual
+author: Ashley Adams 
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+You can add options to executable code like this
+
+```{r}
+#| echo: true
+```
+
+```{r}
+#| warning: false
+#| message: false
+library(tidyverse)
+library(here)
+```
+
+```{r}
+hiphop <- read.csv(here::here("Week 3", "hiphop.csv"))
+```
+
+1.  The data set "Hip Hop" was collected by a researcher interested in understanding how musical taste or preference influences understanding of African American English (AAE). There were 168 undergraduate participants from the University of Montana. These participants were asked to define terms frequently used in AAE terms and were later surveyed on personal demographics. The following code embedded in the document further analyzed these data.
+2.  The rows of this data set are each observation or response per person.
+3.  Missing values in this data set were replaced with "0." I think some benefits to this are that R doesn't like reading files with missing data, so the 0 can function as a placeholder. At least one drawback to this is that the "0" is interpreted as a value, so the person coding in R must take the extra step to tell R to drop the "0's" and exlude them from the data set if they are mean to be read as "NA."
+
+```{r Code for Question 4}
+hiphop <- hiphop |>
+  drop_na() |> 
+  mutate(
+    sex = as.factor(sex),
+    ethnic = as.factor(ethnic)
+  )
+```
+
+```{r code for question 5}
+hiphop |> 
+  count(word)
+##64 AAE words were used in this dataset.
+```
+
+```{r code for question 6}
+hiphop <-hiphop |> 
+  mutate(
+    ethnic = if_else(ethnic == "white", "white", "non-white"))
+```
+
+```{r code for question 7}
+##hiphop_new <- hiphop |> 
+##distinct(subj, .keep_all =TRUE) |> 
+  ##summarise(age, sex, ethnic) |> 
+  ##count(ethnic, sex, sort = TRUE)
+```
+
+```{r}
+##hiphop <- hiphop |> 
+  ##mutate(age = as.factor(age)) |> 
+  ##count(age)
+##this seemed to be the only way I could determine how many people were in each age group-AA
+```
+
+7.  The people in this study were of two ethnicities, "white" and "non-white." There are 62 white participants. Of the white participants, 42 are female and 20 are male. There 18 non-white participants and of these participants, 14 were female and 4 were male. Ages ranged from 16-42 yrs old; most of the participants were the age 18 and the ages least represented were in the 23-42 range. There were 5120 participants total in this study.
+
+```{r code for question 8 }
+ggplot(data = hiphop, 
+         mapping = aes(x = sex, 
+             y = age)) + 
+  geom_boxplot() + 
+  xlab("Sex") + 
+  ylab("Age (yrs)") + 
+  ggtitle("Plot of Sex vs. Age of Participants in AAE Study") + 
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r more code for question 8}
+ggplot(data = hiphop, 
+       mapping = aes(x = ethnic, 
+                     y = age)) + 
+  geom_boxplot() + 
+  xlab("Ethnicity") + 
+  ylab("Age (yrs)") + 
+  ggtitle(" Plot of Ethnicity vs. Age of Participants in AAE Study") + 
+   theme(plot.title = element_text(hjust = 0.5)) 
+```
+
+```{r Familiar Words}
+hiphop |> 
+  filter(age < 20) |> 
+  select(word, familiarity) |> 
+  group_by(word) |> 
+  summarize(familiarity = mean(familiarity)) |> 
+  slice_min(familiarity) 
+
+```
+
+```{r}
+hiphop |> 
+  filter(age < 20) |> 
+  select(word, familiarity) |> 
+  group_by(word) |> 
+  summarize(familiarity = mean(familiarity)) |> 
+  slice_max(familiarity)
+
+```
+
+```{r}
+hiphop |> 
+  filter(age < 20) |> 
+  select(word, familiarity) |> 
+  group_by(word) |> 
+  summarize(familiarity = mean(familiarity)) |> 
+  slice_max(familiarity)
+```
+
+```{r}
+hiphop |> 
+  filter(ethnic == "non-white",
+         sex == "Female") |> 
+  select(word, familiarity) |> 
+  group_by(word) |> 
+  summarize(familiarity = mean(familiarity)) |> 
+  slice_min(familiarity)
+```
+
+```{r}
+hiphop |> 
+  filter(ethnic == "non-white",
+         sex == "Female") |> 
+  select(word, familiarity) |> 
+  group_by(word) |> 
+  summarize(familiarity = mean(familiarity)) |> 
+  slice_max(familiarity) 
+```
+
+```{r}
+hiphop |> 
+  filter(age > 30,
+         ethnic == "white",
+         sex == "Male") |> 
+  select(word, familiarity) |> 
+  group_by(word) |> 
+  summarize(familiarity = mean(familiarity)) |> 
+  slice_min(familiarity) 
+```
+
+```{r}
+hiphop |> 
+  filter(age > 30,
+         ethnic == "white",
+         sex == "Male") |> 
+  select(word, familiarity) |> 
+  group_by(word) |> 
+  summarize(familiarity = mean(familiarity)) |> 
+  slice_max(familiarity)
+```
+
+```{r Justin Bieber}
+hiphop |> 
+  filter(sex == "Male",
+         ethnic == "white", 
+         city >= 10000,
+         city <= 60000, 
+         age >= 17, 
+         age <=23,
+         bieber == 5
+         )
+  
+## Justin Bieber is likely subject 17. After filtering for white males aged 17-23 in cities with populations between 10000 and 60000 people who also have decent knowledge of Justin Bieber's music, the only subject left is subject 17. 
+
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
