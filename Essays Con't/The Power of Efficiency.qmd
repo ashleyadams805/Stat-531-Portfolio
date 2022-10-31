@@ -1,0 +1,17 @@
+---
+title: "The Power of Efficiency"
+author: "Ashley Adams"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## The Power of Efficiency
+
+The official technical definition of efficiency according to the Oxford Dictionary is "the ratio of the useful work performed by a machine or in a process to the total energy expended or heat taken in."
+With this class, efficiency in statistical computing means being able to get to the goal of your code in an quick way that is still meaningful and useful. I think that before this course, and even sometimes now whilst taking this course, I have a trouble in writing efficient code, but I've certainly improved over the course of the last few weeks. I've specifically become more efficient in writing code after learning the pipe operator in R, such that I can manipulate my dataset without having to continuously call in my dataframe or use the whole name of the file it is saved into. I've also improved in being able to search for and utilize useful solutions when solving problems assigned to us in class.
+
+I think that in this class, and in other stats classes where we might be using R, efficiency in coding would be using the least possible amount of steps to obtain what you want while the code is readable and makes sense to someone trying to understand what the user had computed. This allows for the reader to understand what is happening without having to backtrace what the user was trying to do. I think my biggest "aha" moment thus far, is when one of my classmates was helping me code and she noticed that I was using the pipe operator, but would do things over multiple chunks in R when instead I could combine steps and save myself time and energy. This can be seen in Lab 3 when I combined some of the filtering steps in one chunk instead of over multiple chunks.

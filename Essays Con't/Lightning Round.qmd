@@ -1,0 +1,22 @@
+---
+title: "Lightning Round"
+author: "Ashley Adams"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Lightning Round
+
+-   If Sara Goel doesn\'t earn an A, then nobody should, because she has not only worked hard in mastering the course material, but also takes time to help me understand and work through coding in R without revealing answers but making sure I get their on my own with some helpful guiding on the side. She definitely knows her way around R and is a team player and is always willing to be helpful and makes sure that her peers understand the course concepts too.
+
+-   The most difficult part of this class is the time management of the material and courseload. This class requires what feels like a lot of outside learning (which is VERY understandable) but has been difficult for me to keep up with. This likely has a lot to do with me being in grad school and having other timely responsibilities besides my classes like running a lab, TAing, working on my own research etc.
+
+-   The easiest part of this class for me was the week 1 material and using GGplot. It all was material and tasks in R I've seen before and have become comfortable in solving as I had spent a lot of time with my own data fixing minor mistakes in R and becoming comfortable creating plots.
+
+-   The part of the class that surprised me the most was using quarto documents and github. I've never heard of either of these prior to this course and I've had graduate student friends who have taken this class who have also never had to use these websites or document types in their grad school classes at Cal Poly.
+
+-   I would tell a brand new student taking STATS 331 that this class is very learning heavy and that it should hopefully be their main priority in the quarter they are taking it in. I wish I had less responsibilities in my academic and home life to be able to devote the time I want to this course because I truly want to improve my R skills and apply them to life in and beyond grad school.
